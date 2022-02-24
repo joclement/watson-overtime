@@ -21,7 +21,7 @@ pytest = "^7.0.1"
 pytest-cov = "^3.0.0"
 
 [tool.poetry.scripts]
-wo = "watson_overtime.main:main"
+watson-overtime = "watson_overtime.main:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

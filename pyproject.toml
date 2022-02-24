@@ -1,6 +1,6 @@
 [tool.poetry]
 authors = ["Joris Clement <flyingdutchman@posteo.eu>"]
-description = "Small tool to check overtime in combination with the td-watson time tracker"
+description = "Check overtime in combination with the td-watson time tracker"
 license = "MIT"
 name = "watson-overtime"
 repository = "https://github.com/flyingdutchman23/watson-overtime"

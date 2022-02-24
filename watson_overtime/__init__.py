@@ -1,3 +1,10 @@
-import importlib.metadata
+try:
+    import importlib.metadata
 
-__version__ = importlib.metadata.version(__name__)
+    version = importlib.metadata.version(__name__)
+except ImportError:
+    import importlib_metadata
+
+    version = importlib_metadata.version(__name__)
+
+__version__ = version

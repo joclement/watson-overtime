@@ -6,7 +6,7 @@ nox.options.sessions = "lint", "mypy", "tests"
 LOCATIONS = "watson_overtime", "noxfile.py"
 
 
-@session(python=["3.8", "3.9", "3.10"])
+@session(python=["3.6", "3.7", "3.8", "3.9", "3.10"])
 def tests(session):
     args = session.posargs or ["tests", "--cov"]
     session.install(".")

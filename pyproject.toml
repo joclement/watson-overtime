@@ -1,9 +1,9 @@
 [tool.poetry]
+authors = ["Joris Clement <joclement@posteo.net>"]
+description = "Small tool to check overtime in combination with the td-watson time tracker"
+license = "MIT"
 name = "watson-overtime"
 version = "0.1.1"
-description = "Small tool to check overtime in combination with the td-watson time tracker"
-authors = ["Joris Clement <joclement@posteo.net>"]
-license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.6"

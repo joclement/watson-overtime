@@ -4,7 +4,7 @@ description = "Check overtime in combination with the td-watson time tracker"
 license = "MIT"
 name = "watson-overtime"
 repository = "https://github.com/flyingdutchman23/watson-overtime"
-version = "0.1.1"
+version = "0.2.0"
 
 [tool.poetry.dependencies]
 python = "^3.6"

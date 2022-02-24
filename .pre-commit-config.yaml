@@ -1,0 +1,18 @@
+repos:
+- repo: meta
+  hooks:
+  - id: check-hooks-apply
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: check-case-conflict
+  - id: check-toml
+  - id: check-yaml
+  - id: detect-private-key
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: trailing-whitespace
+- repo: https://github.com/pre-commit/pygrep-hooks
+  rev: v1.9.0
+  hooks:
+  - id: python-use-type-annotations

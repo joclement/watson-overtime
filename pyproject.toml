@@ -3,6 +3,7 @@ authors = ["Joris Clement <joclement@posteo.net>"]
 description = "Check overtime in combination with the td-watson time tracker"
 license = "MIT"
 name = "watson-overtime"
+readme = "README.md"
 repository = "https://github.com/flyingdutchman23/watson-overtime"
 version = "0.2.0"
 

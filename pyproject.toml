@@ -8,7 +8,7 @@ repository = "https://github.com/flyingdutchman23/watson-overtime"
 version = "0.2.0"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 humanize = ">=3.14.0, <5.0.0"
 click = ">=7.1.2, <9.0.0"
 pytimeparse = "^1.1.8"

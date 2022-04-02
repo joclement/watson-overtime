@@ -5,11 +5,14 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.7", "3.8", "3.9", "3.10"]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v1
       with:
-        python-version: '3.8'
+        python-version: ${{ matrix.python-version }}
         architecture: x64
     - run: pip install pip==22.0.4
     - run: pip install nox==2022.1.7

@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 import json
 import sys
 
@@ -7,6 +7,7 @@ from humanize import naturaldelta
 
 from . import __version__
 from .click_timedelta import TIME_DELTA
+from .watson_overtime import watson_overtime
 
 
 def _build_work_diff_msg(diff: timedelta) -> str:
@@ -47,14 +48,7 @@ def main(
 ) -> None:
     watson_report = json.load(watson_report)
 
-    worked_time = timedelta(seconds=watson_report["time"])
-    start_date = datetime.fromisoformat(watson_report["timespan"]["from"])
-    end_date = datetime.fromisoformat(watson_report["timespan"]["to"])
-
-    total_time = end_date - start_date
-    total_goal_work_time = working_hours * (total_time / period)
-    diff = worked_time - total_goal_work_time
-
+    diff = watson_overtime(watson_report, working_hours, period)
     click.echo(_build_work_diff_msg(diff))
 
 

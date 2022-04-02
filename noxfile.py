@@ -28,5 +28,6 @@ def black(session):
 
 @session(python="3.9")
 def mypy(session):
+    args = ["--disable-error-code", "return", *LOCATIONS]
     session.install("mypy")
     session.run("mypy", *LOCATIONS)

@@ -19,7 +19,7 @@ pytest = "^7.0.1"
 pytest-cov = "^3.0.0"
 black = {version = "^22.1.0", python = ">=3.9"}
 flake8 = {version = "^4.0.1", python = ">=3.9"}
-mypy = {version = "^0.931", python = ">=3.9"}
+mypy = {version = ">=0.931, <=1", python = ">=3.9"}
 flake8-black = {version = "^0.2.4", python = ">=3.9"}
 flake8-import-order = {version = "^0.18.1", python = ">=3.9"}
 

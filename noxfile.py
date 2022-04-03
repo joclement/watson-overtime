@@ -30,4 +30,4 @@ def black(session):
 def mypy(session):
     args = ["--disable-error-code", "return", *LOCATIONS]
     session.install("mypy")
-    session.run("mypy", *LOCATIONS)
+    session.run("mypy", *args)

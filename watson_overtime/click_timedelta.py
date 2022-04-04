@@ -4,7 +4,7 @@ import click
 from pytimeparse import parse
 
 
-class TimeDeltaParamType(click.ParamType):
+class TimeDeltaParamType(click.ParamType):  # type: ignore
     name = "timedelta"
 
     def convert(

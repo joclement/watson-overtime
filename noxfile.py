@@ -29,6 +29,12 @@ def black(session: Session) -> None:
 
 @session(python="3.9")
 def mypy(session: Session) -> None:
-    args = ["--disable-error-code", "return", *LOCATIONS]
+    args = [
+        "--strict",
+        "--allow-untyped-decorators",
+        "--disable-error-code",
+        "return",
+        *LOCATIONS,
+    ]
     session.install("mypy")
     session.run("mypy", *args)

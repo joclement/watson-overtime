@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from typing import Any, Dict
 
 
 def _calc_diff(
@@ -14,7 +15,7 @@ def _calc_diff(
 
 
 def watson_overtime(
-    watson_report: dict, working_hours: timedelta, period: timedelta
+    watson_report: Dict[str, Any], working_hours: timedelta, period: timedelta
 ) -> timedelta:
     worked_time = timedelta(seconds=watson_report["time"])
     start_date = datetime.fromisoformat(watson_report["timespan"]["from"])

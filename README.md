@@ -11,7 +11,7 @@
 
 This is a simple tool to calculate if a set working time is fulfilled for a
 certain period of time. Therefore, it uses the time tracking software
-[td-watson][https://pypi.org/project/td-watson/] as input.
+[td-watson](https://pypi.org/project/td-watson/) as input.
 
 
 ## Usage

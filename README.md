@@ -17,7 +17,7 @@ certain period of time. Therefore, it uses the time tracking software
 ## Usage
 
 Generate a `watson report` in JSON format. This command e.g. generates a watson
-report for the current for the project `PROJECT`. Pipe the output to
+report for the project `PROJECT`. Pipe the output to
 `watson-overtime`:
 ```bash
 watson report -w -p PROJECT --json | watson-overtime
